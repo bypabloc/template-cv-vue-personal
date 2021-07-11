@@ -5,7 +5,7 @@ const routes = [
     {
         path: '/',
         name: '/',
-        component: () => import('../components/Home'),
+        component: () => import('../views/admin/Dashboard'),
     },
     {
         path: '/login',
