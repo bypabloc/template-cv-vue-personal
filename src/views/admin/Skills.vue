@@ -5,10 +5,12 @@
                 <Title :text="title"/>
             </h5>
             <div class="row">
-                <div class="col-6 row" v-for="(value, index) in skills" :key="index">
-                    <i :class="[value.icon]+' col-2 theme-color-'+[theme]+'-800 p-2'" style="font-size: 1rem;"></i>
-                    <div class="col-10">{{ value.text }}</div>
-                    <div class="progress col-12" style="height: 3px;">
+                <div class="col-6" v-for="(value, index) in skills" :key="index">
+                    <div class="row ">
+                        <i :class="[value.icon]+' col-2 theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
+                        <div class="col-10">{{ value.text }}</div>
+                    </div>
+                    <div class="progress" style="height: 3px;">
                         <div :class="'progress-bar theme-bg-'+[theme]+'-800'" role="progressbar" 
                             :style="{
                                 width: `${value.percentage}%`
