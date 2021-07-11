@@ -46,8 +46,6 @@ export default {
                     },
                     title: 'Informatics Engineer',
                     description: 'IUTAB University. Learn the basics of technology.',
-                    finished: true,
-                    editing: false,
                 },
                 {
                     range: {
@@ -56,8 +54,6 @@ export default {
                     },
                     title: 'Curso Udemy - Laravel',
                     description: 'Laravel para procitos xD.',
-                    finished: true,
-                    editing: false,
                 },
             ],
             modelConfig: {

@@ -24,6 +24,9 @@
                             <skills/>
                             <languages/>
                         </div>
+                        <div :class="'col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 theme-'+[theme]+'-100 p-2'">
+                            <my-life/>
+                        </div>
                     </div>
                 </main>
             </div>
@@ -42,6 +45,7 @@ import socials from './Socials'
 import hobbies from './Hobbies'
 import PictureProfile from './Picture'
 import languages from './Languages'
+import MyLife from './MyLife'
 
 export default {
     name: 'Dashboard',
@@ -57,6 +61,7 @@ export default {
         hobbies,
         languages,
         PictureProfile,
+        MyLife,
     },
     methods: {
         resizeTextarea (event) {
