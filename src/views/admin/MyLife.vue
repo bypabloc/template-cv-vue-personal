@@ -126,7 +126,7 @@ export default {
                     },
                     position: 'Software engineer',
                     title: 'Sistema informático para PYMEs - <a href="https://appinteli.com/" target="_blank">AppInteli.com</a>.',
-                    description: `Paralelamente a mi trabajo for mal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
+                    description: `Paralelamente a mi trabajo formal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
                     skills: [
                         'Emprendimiento propio',
                     ],

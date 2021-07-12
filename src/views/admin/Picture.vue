@@ -28,6 +28,12 @@ export default {
         border-radius: 50%;
     }
 
+    @media only screen and (max-width: 350px) {
+        /* For mobile phones: */
+        .mx-auto {
+            width: 90%;
+        }
+    }
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         .mx-auto {
