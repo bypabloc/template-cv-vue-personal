@@ -1,5 +1,5 @@
 export default {
-    theme: 'orange',
+    theme: 'blue',
     
     user: {
         loggedIn: false,

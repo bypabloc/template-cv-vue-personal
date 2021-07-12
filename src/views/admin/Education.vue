@@ -47,8 +47,8 @@ export default {
                     title: 'Curso Udemy y YouTube',
                     description: `
                         Varios cursos en línea que me han ayudado a incrementar mis
-                        habilidades en el área. Ejemplo: modern JavaScript, Nodejs with
-                        Sock et.io, Vue, Flutter, Dart, Laravel, php. Among others.
+                        habilidades en el área. Ejemplo: JavaScript moderno, Nodejs con
+                        Socket.io, Vue, Flutter, Dart, Laravel, php.
                     `,
                 },
                 {
