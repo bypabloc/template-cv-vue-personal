@@ -5,7 +5,7 @@
             <h5 class="card-title">
                 <Title :text="title"/>
             </h5>
-            <div class="row" v-for="(value, index) in prouds" :key="index">
+            <div class="row pt-2" v-for="(value, index) in prouds" :key="index">
                 <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
                     <i :class="[value.icon]+' theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
                 </div>

@@ -10,6 +10,7 @@
                             <info/>
                             <socials/>
                             <hobbies/>
+                            <downloadable/>
                         </div>
                         <div :class="'col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9 col-xxl-9 theme-'+[theme]+'-100 p-2'">
                             <iam/>
@@ -42,6 +43,7 @@ import hobbies from './Hobbies'
 import PictureProfile from './Picture'
 import languages from './Languages'
 import MyLife from './MyLife'
+import Downloadable from './Downloadable'
 
 export default {
     name: 'Dashboard',
@@ -59,6 +61,7 @@ export default {
         languages,
         PictureProfile,
         MyLife,
+        Downloadable,
     },
     methods: {
         resizeTextarea (event) {
