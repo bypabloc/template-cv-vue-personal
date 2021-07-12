@@ -5,7 +5,7 @@
                 <Title :text="title"/>
             </h5>
             <div class="row">
-                <div class="col-6" v-for="(value, index) in skills" :key="index">
+                <div class="col-12 col-sm-6 col-md-12" v-for="(value, index) in skills" :key="index">
                     <div class="row ">
                         <i :class="[value.icon]+' col-2 theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
                         <div class="col-10">{{ value.text }}</div>
