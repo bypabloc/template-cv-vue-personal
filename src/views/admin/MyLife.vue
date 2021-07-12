@@ -154,7 +154,7 @@ export default {
                     ],
                 },
                 {
-                    date: '2020',
+                    date: '2021',
                     icon: 'fas fa-heart',
                     status: {
                         type: 4,
@@ -175,6 +175,27 @@ export default {
                     skills: [
                         'Primeros pasos en un framework de JavaScript (VueJS 3)',
                         'Divirtiéndome aprendiendo',
+                    ],
+                },
+                {
+                    date: '2021',
+                    icon: 'fas fa-heart',
+                    status: {
+                        type: 4,
+                        team: 1,
+                        link: `
+                            Disponible en mí 
+                            <a href="https://github.com/bypabloc/flutter_curso_peliculas" target="_blank">GitHub</a>
+                        `,
+                    },
+                    title: 'Código abierto de una app de películas.',
+                    description: `Una aplicación la cual muestra información de las películas del momento. 
+                        <br/>
+                        <a href="https://bypabloc-flutter-curso-peliculas.netlify.app/#/" target="_blank">Aplicación desplegada en Netlify</a>
+                    `,
+                    skills: [
+                        'Primeros pasos en desarrollo móvil',
+                        'Dart y Flutter',
                     ],
                 },
                 {
