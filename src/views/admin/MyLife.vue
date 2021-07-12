@@ -132,6 +132,24 @@ export default {
                     ],
                 },
                 {
+                    date: '2020',
+                    icon: 'fab fa-vuejs',
+                    status: {
+                        type: 3,
+                        team: 1,
+                    },
+                    title: 'Primeros pasos en un framework de JavaScript (Vuejs).',
+                    description: `Mini Twitter
+                        <br/>
+                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Frontend</a>
+                        <br/>
+                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend</a>
+                    `,
+                    skills: [
+                        'Conocimiento propio',
+                    ],
+                },
+                {
                     date: '2018 - Actualidad',
                     icon: 'fas fa-briefcase',
                     status: {
@@ -145,13 +163,15 @@ export default {
                         contrataron, comenzamos con herramientas que la empresa solicitó,
                         como jQuery y Laravel. Con el tiempo hemos aprendido, gracias a los
                         requerimientos de los clientes, a entenderlos y satisfacer sus necesidades.<br/>
-                        Después de meses contrata mos a otro desarrollador y poco a poco
+                        Después de meses contratamos a otro desarrollador y poco a poco
                         hemos ido creciendo como empresa. Actualmente soy el Ingeniero de
                         Software a cargo de proyectos y toma de decisiones en materia de
                         desarrollo.<br/>
                         Actualmente estoy trabajando en el desarrollo de un e-commerce (en
                         Vue) que vinculará la gestión del restaurante con los clientes, para evitar
-                        al máximo la interacción humana.<br/>
+                        al máximo la interacción humana.
+                        Puede ver una vista previa de la vinculacion en este enlace: <a href="https://puertonorte.jobal.pe/colonial" target="_blank">Jobal.pe</a>
+                        <br/>
                         También soy el encargado del despliegue en AWS, teniendo experiencia
                         en servicios como EC2, RDS, S3, Route 53, SES, AutoScalling y
                         LoadBalancer.
