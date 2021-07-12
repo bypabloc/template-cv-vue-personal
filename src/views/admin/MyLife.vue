@@ -39,6 +39,7 @@
                                                             value.status.type==1 ? 'text-warning ' : ' ',
                                                             value.status.type==2 ? 'text-danger ' : ' ',
                                                             value.status.type==3 ? 'text-success ' : ' ',
+                                                            value.status.type==4 ? 'text-info ' : ' ',
                                                         ]
                                                         "
                                                     >
@@ -50,7 +51,13 @@
                                                         </span>
                                                         <span v-else-if="value.status.type == 3">
                                                             Activo
+                                                        </span>
+                                                        <span v-else-if="value.status.type == 4">
+                                                            Fuente abierta
                                                         </span>,
+                                                    </span>
+                                                    <span v-if="value?.status?.link">
+                                                        <span v-html="value.status.link"></span>,
                                                     </span>
                                                     Equipo: 
                                                     <span>
@@ -72,8 +79,8 @@
                                                             value.status.type==1 ? 'text-warning ' : ' ',
                                                             value.status.type==2 ? 'text-danger ' : ' ',
                                                             value.status.type==3 ? 'text-success ' : ' ',
-                                                        ]
-                                                        "
+                                                            value.status.type==4 ? 'text-info ' : ' ',
+                                                        ]"
                                                     >
                                                         <span v-if="value?.status?.reason?.title">
                                                             {{ value?.status?.reason?.title }}:
@@ -126,9 +133,42 @@ export default {
                     },
                     position: 'Software engineer',
                     title: 'Sistema informático para PYMEs - <a href="https://appinteli.com/" target="_blank">AppInteli.com</a>.',
-                    description: `Paralelamente a mi trabajo for mal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
+                    description: `Paralelamente a mi trabajo formal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
                     skills: [
                         'Emprendimiento propio',
+                    ],
+                },
+                {
+                    date: '2021',
+                    icon: 'fas fa-heart',
+                    status: {
+                        type: 4,
+                        team: 1,
+                        link: 'Disponible en mí <a href="https://github.com/bypabloc/template-cv-vue-personal" target="_blank">GitHub</a>',
+                    },
+                    title: 'Código abierto de este currículum.',
+                    description: `¡Una plantilla de currículum basada en VueJS y con Bootstrap que estás viendo ahora mismo!.`,
+                    skills: [
+                        'Compartir código',
+                        'Conocimiento propio',
+                    ],
+                },
+                {
+                    date: '2020',
+                    icon: 'fab fa-vuejs',
+                    status: {
+                        type: 3,
+                        team: 1,
+                    },
+                    title: 'Primeros pasos en un framework de JavaScript (Vuejs).',
+                    description: `Mini Twitter
+                        <br/>
+                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Frontend</a>
+                        <br/>
+                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend</a>
+                    `,
+                    skills: [
+                        'Conocimiento propio',
                     ],
                 },
                 {
@@ -145,13 +185,15 @@ export default {
                         contrataron, comenzamos con herramientas que la empresa solicitó,
                         como jQuery y Laravel. Con el tiempo hemos aprendido, gracias a los
                         requerimientos de los clientes, a entenderlos y satisfacer sus necesidades.<br/>
-                        Después de meses contrata mos a otro desarrollador y poco a poco
+                        Después de meses contratamos a otro desarrollador y poco a poco
                         hemos ido creciendo como empresa. Actualmente soy el Ingeniero de
                         Software a cargo de proyectos y toma de decisiones en materia de
                         desarrollo.<br/>
                         Actualmente estoy trabajando en el desarrollo de un e-commerce (en
                         Vue) que vinculará la gestión del restaurante con los clientes, para evitar
-                        al máximo la interacción humana.<br/>
+                        al máximo la interacción humana.
+                        Puede ver una vista previa de la vinculacion en este enlace: <a href="https://puertonorte.jobal.pe/colonial" target="_blank">Jobal.pe</a>
+                        <br/>
                         También soy el encargado del despliegue en AWS, teniendo experiencia
                         en servicios como EC2, RDS, S3, Route 53, SES, AutoScalling y
                         LoadBalancer.

@@ -6,20 +6,22 @@
             </h5>
 
             <div class="row" v-for="(value, index) in education" :key="index">
-                <div class="row">
-                    <span class="col-2">{{ value.range.end }}</span>
-                    <span class="col-2">{{ value.range.start }}</span>
-                    <div class="col-8">
-                        <p>
-                            <strong>
-                                {{ value.title }}
-                            </strong>
-                            <br>
-                            <small>
-                                {{ value.description }}
-                            </small>
-                        </p>
-                    </div>
+                <span class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <strong>Desde:</strong> {{ value.range.start }}
+                </span>
+                <span class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <strong>Hasta:</strong> {{ value.range.end }}
+                </span>
+                <div class="col-12">
+                    <p>
+                        <strong>
+                            {{ value.title }}
+                        </strong>
+                        <br>
+                        <small>
+                            {{ value.description }}
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
@@ -42,13 +44,13 @@ export default {
                 {
                     range: {
                         end: 'Actualidad',
-                        start: 'Desde el inicio',
+                        start: 'Desde el inicio de mi aprendizaje',
                     },
-                    title: 'Curso Udemy y YouTube',
+                    title: 'Cursos en Udemy y YouTube',
                     description: `
                         Varios cursos en línea que me han ayudado a incrementar mis
                         habilidades en el área. Ejemplo: JavaScript moderno, Nodejs con
-                        Socket.io, Vue, Flutter, Dart, Laravel, php.
+                        Socket.io, Vue, AWS (EC2, RDS, S3, Route 53, SES, AutoScalling y LoadBalancer), Flutter, Dart, Laravel, php... Entre otros.
                     `,
                 },
                 {

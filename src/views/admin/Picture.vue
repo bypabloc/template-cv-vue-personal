@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="img-fluid mx-auto d-block container m-5">
+        <div class="mx-auto m-5">
             <img class="img-thumbnail" src='../../assets/img_profile.png'/>
         </div>
         <!-- https://dibal-storage.s3.us-east-2.amazonaws.com/images/img_profile.png -->
@@ -25,18 +25,19 @@ export default {
         margin-left:-15px;
     }
     img {
-        width: 250px;
         border-radius: 50%;
     }
 
-    @media (min-width: 0px) and (max-width: 150px) {
-        img {
-            width: 90px;
+    @media only screen and (max-width: 350px) {
+        /* For mobile phones: */
+        .mx-auto {
+            width: 90%;
         }
     }
-    @media (min-width: 151px) and (max-width: 214px) {
-        img {
-            width: 90px;
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .mx-auto {
+            width: 50%;
         }
     }
 

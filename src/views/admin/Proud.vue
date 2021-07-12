@@ -6,21 +6,17 @@
                 <Title :text="title"/>
             </h5>
             <div class="row" v-for="(value, index) in prouds" :key="index">
-
-                <div class="row col-12">
-                    <div class="col-1">
-                        <i :class="[value.icon]+' theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
-                    </div>
-                    <p class="col-11">
-                        <strong>
-                            {{ value.title }}
-                        </strong>
-                        <br/>
-                        <small v-html="value.description">
-                        </small>
-                    </p>
+                <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
+                    <i :class="[value.icon]+' theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
                 </div>
-
+                <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11">
+                    <strong>
+                        {{ value.title }}
+                    </strong>
+                    <br/>
+                    <small v-html="value.description">
+                    </small>
+                </div>
             </div>
         </div>
     </div>
@@ -52,7 +48,7 @@ export default {
                     icon: 'fas fa-graduation-cap',
                     title: 'Haberme graduado como Ingeniero en Informática.',
                     description: 'El orgullo de haber superado una meta, de tantas, de mi vida.',
-                }
+                },
             ],
         }
     },

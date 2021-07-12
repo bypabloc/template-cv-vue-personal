@@ -5,10 +5,12 @@
                 <h5 class="">
                     <Title :text="title"/>
                 </h5>
-                <button type="button" :class="'chip m-1 btn theme-'+[theme]+'-100'" v-for="(value, index) in hobbies" :key="index">
-                    <i :class="[value.icon]+''" style="font-size: 1rem;"></i>
-                    {{ value.text }}
-                </button>
+                <ul>
+                    <li v-for="(item, i) in hobbies" :key="i" :class="'m-1 btn theme-'+[theme]+'-100'">
+                        <i :class="[item.icon]+''" style="font-size: 1rem;"></i>
+                        {{ item.text }}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -51,40 +53,8 @@ export default {
             ],
         }
     },
-    props: {
-    },
     components: {
         Title,
     },
-    methods:{
-        test: () => {
-            return "#";
-        }
-    },
-    created(){
-    },
-    mounted() {
-        this.test();
-    },
 }
 </script>
-
-<style scope>
-.chip {
-    display: inline-block;
-    padding: 0 25px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 50px;
-    border-radius: 25px;
-    background-color: #f1f1f1;
-}
-
-.chip img {
-    float: left;
-    margin: 0 10px 0 -25px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-</style>
