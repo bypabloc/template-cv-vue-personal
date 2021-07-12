@@ -28,7 +28,70 @@
 
                                         <div class="widget-body">
                                             <div class="widget-main">
-                                                <div v-html="value.description"></div>
+                                                <h6 class="widget-title smaller" v-if="value?.position">
+                                                    Puesto: {{ value.position }}
+                                                </h6>
+
+                                                <div v-if="value?.status?.type">
+                                                    Estado actual: 
+                                                    <span
+                                                        :class="[
+                                                            value.status.type==1 ? 'text-warning ' : ' ',
+                                                            value.status.type==2 ? 'text-danger ' : ' ',
+                                                            value.status.type==3 ? 'text-success ' : ' ',
+                                                        ]
+                                                        "
+                                                    >
+                                                        <span v-if="value.status.type == 1">
+                                                            Detenido
+                                                        </span>
+                                                        <span v-else-if="value.status.type == 2">
+                                                            Cancelado
+                                                        </span>
+                                                        <span v-else-if="value.status.type == 3">
+                                                            Activo
+                                                        </span>,
+                                                    </span>
+                                                    Equipo: 
+                                                    <span>
+                                                        {{ value.status.team }}
+                                                        <span v-if="value.status.team > 1">
+                                                            personas
+                                                        </span>
+                                                        <span v-else>
+                                                            persona
+                                                        </span>
+                                                    </span>
+                                                </div>
+
+                                                <div v-html="value.description" class="pt-3"></div>
+
+                                                <div v-if="value?.status?.type" class="pt-3">
+                                                    <span
+                                                        :class="[
+                                                            value.status.type==1 ? 'text-warning ' : ' ',
+                                                            value.status.type==2 ? 'text-danger ' : ' ',
+                                                            value.status.type==3 ? 'text-success ' : ' ',
+                                                        ]
+                                                        "
+                                                    >
+                                                        <span v-if="value?.status?.reason?.title">
+                                                            {{ value?.status?.reason?.title }}:
+                                                        </span>
+                                                    </span>
+                                                    <span v-if="value?.status?.reason?.text">
+                                                        {{ value?.status?.reason?.text }}
+                                                    </span>
+                                                </div>
+                                                
+                                                <div v-if="value?.skills?.length>0" class="pt-3">
+                                                    Conocimientos obtenidos:
+                                                    <ul>
+                                                        <li v-for="(item, i) in value?.skills" :key="i">
+                                                            {{ item }}
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -59,13 +122,13 @@ export default {
                     icon: 'fas fa-bolt',
                     status: {
                         type: 3,
-                        team: 1,
+                        team: 2,
                     },
                     position: 'Software engineer',
                     title: 'Sistema informático para PYMEs - <a href="https://appinteli.com/" target="_blank">AppInteli.com</a>.',
-                    description: `Paralela mente a mi trabajo for mal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
+                    description: `Paralelamente a mi trabajo for mal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
                     skills: [
-                        'Deploys',
+                        'Emprendimiento propio',
                     ],
                 },
                 {
@@ -73,7 +136,7 @@ export default {
                     icon: 'fas fa-briefcase',
                     status: {
                         type: 3,
-                        team: 1,
+                        team: 4,
                     },
                     position: 'Lider',
                     title: 'Sistema informático para restaurantes - <a href="https://dibal.pe" target="_blank">Dibal.pe</a>.',
@@ -140,7 +203,7 @@ export default {
                         team: 1,
                         reason: {
                             title: 'Razón de éxito',
-                            text: 'Finalizado',
+                            text: 'Un buen levantamiento de informacion y organización',
                         },
                     },
                     title: 'Sistema informático para la realización de examenes online - Freelance',
