@@ -157,7 +157,7 @@ export default {
                         LoadBalancer.
                     `,
                     skills: [
-                        'Deploys',
+                        'Deploys (AWS)',
                         'Trabajo bajo presión',
                         'Multiusers',
                         'Eficacia',
@@ -169,10 +169,7 @@ export default {
                     date: '2018',
                     icon: 'fas fa-plane-departure',
                     title: 'Migré de mi país',
-                    description: ``,
-                    skills: [
-                        'En este proyecto entendí la verdadera importancia del trabajo en equipo',
-                    ],
+                    description: `Yo: No se a donde llegué, ¿esto es lo que el mundo llama independizarse?, me tuve que empezar a hacer comida yo solo, quiero a mi mamá.`,
                 },
                 {
                     date: '2017 - 2018',

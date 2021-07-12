@@ -36,8 +36,8 @@ export default {
                     percentage: 100,
                 },
                 {
-                    text: 'Ingles',
-                    percentage: 40,
+                    text: 'Inglés',
+                    percentage: 30,
                 },
             ],
             
