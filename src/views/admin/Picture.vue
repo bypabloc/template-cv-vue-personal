@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="mx-auto m-5">
+        <div class="mx-auto">
             <img class="img-thumbnail" src='../../assets/img_profile.png'/>
         </div>
         <!-- https://dibal-storage.s3.us-east-2.amazonaws.com/images/img_profile.png -->
