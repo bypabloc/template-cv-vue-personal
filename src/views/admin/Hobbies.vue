@@ -26,15 +26,15 @@ export default {
             hobbies: [
                 {
                     icon: 'fas fa-route',
-                    text: 'Getting out of Safe Zone',
+                    text: 'Salir de la zona de confort',
                 },
                 {
                     icon: 'fas fa-biohazard',
-                    text: 'Challenges',
+                    text: 'Retos',
                 },
                 {
                     icon: 'fas fa-leaf',
-                    text: 'Nature',
+                    text: 'Naturaleza',
                 },
                 {
                     icon: 'fas fa-running',
@@ -42,16 +42,13 @@ export default {
                 },
                 {
                     icon: 'fas fa-music',
-                    text: 'Music',
+                    text: 'Música',
                 },
                 {
                     icon: 'fas fa-bug',
-                    text: 'Making Bugs!',
+                    text: '¡Hacer Bugs!',
                 },
-                
-                
             ],
-            
         }
     },
     props: {

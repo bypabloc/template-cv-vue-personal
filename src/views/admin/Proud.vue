@@ -5,69 +5,22 @@
             <h5 class="card-title">
                 <Title :text="title"/>
             </h5>
-            <loading v-if="fetchingData"/>
-            <div v-else-if="error">
-                {{ error }}
-            </div>
-            <draggable tag="transition-group" v-else class="dragArea list-group w-full" :list="proudsTemp" :onChange="drop"> <!-- :list="proudsTemp" -->
-                <div v-else-if="!fetchingData" class="row" v-for="(value, index) in proudsTemp" :key="index">
+            <div class="row" v-for="(value, index) in prouds" :key="index">
 
-                    <div class="row col-11">
-                        <div class="col-1">
-                            <i :class="[value.icon]+' theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
-                        </div>
-                        <div class="col-11" v-if="!value.editing">
-                            <p v-on:click="value.editing = true">
-                                <strong>
-                                    {{ value.title }}
-                                </strong>
-                                <br/>
-                                <small v-html="value.description">
-                                </small>
-                            </p>
-                        </div>
-                        <div class="col-11" v-if="value.editing">
-                            <input 
-                                class="m-1 form-control" 
-                                placeholder="fas fa-icon"
-                                v-model="value.icon"
-                                v-on:keyup.enter.exact="value.editing = false; save(index);"
-                                v-on:keyup.esc="value.editing = false; save(index);"
-                            >
-                            <input 
-                                class="m-1 form-control" 
-                                placeholder="Título"
-                                v-model="value.title" 
-                                v-on:keyup.enter.exact="value.editing = false; save(index);"
-                                v-on:keyup.esc="value.editing = false; save(index);"
-                            >
-                            <textarea 
-                                class="m-1 form-control" 
-                                placeholder=""
-                                v-model="value.description"
-                                v-on:keyup="resizeTextarea($event)"
-                                v-on:keydown="resizeTextarea($event)"
-                                v-on:keyup.enter.exact="value.editing = false; save(index);"
-                                v-on:keyup.esc="value.editing = false; save(index);"
-                            ></textarea>
-                        </div>
+                <div class="row col-12">
+                    <div class="col-1">
+                        <i :class="[value.icon]+' theme-color-'+[theme]+'-800 p-2'" style="font-size: 2rem;"></i>
                     </div>
-
-                    <div class="row col-1 d-flex align-items-center">
-                        <button type="button" v-if="value.editing" v-on:click="save(index)" :class="'btn theme-bg-'+[theme]+'-200'">
-                            <i :class="'fas fa-check'"></i>
-                        </button>
-                        <button type="button" v-on:click="remove(value.id)" :class="'btn theme-bg-'+[theme]+'-200'">
-                            <i :class="'fas fa-times'"></i>
-                        </button>
-                    </div>
-                    
+                    <p class="col-11">
+                        <strong>
+                            {{ value.title }}
+                        </strong>
+                        <br/>
+                        <small v-html="value.description">
+                        </small>
+                    </p>
                 </div>
-            </draggable>
-            <div class="pt-2 d-flex justify-content-center">
-                <button type="button" v-on:click="add" :class="'btn theme-bg-'+[theme]+'-200'">
-                    <i :class="'fas fa-plus'"></i>
-                </button>
+
             </div>
         </div>
     </div>
@@ -76,51 +29,35 @@
 
 <script>
 
-import { mapState, mapActions } from "vuex";
+import { mapActions } from "vuex";
 import Title from './Title'
-import Loading from '@/components/Loading'
-import { VueDraggableNext } from 'vue-draggable-next'
-import * as _ from "lodash";
 
 export default {
     name: 'Proud',
     data() {
         return {
-            title: "What am I proud of?",
-            proudsTemp: [],
-            fetchingData: true,
+            title: "¿De que estoy orgulloso?",
+            prouds: [
+                {
+                    icon: 'fas fa-fire',
+                    title: 'De fundar una StartUp (AppInteli.com).',
+                    description: 'Es un nuevo reto el cual quiero saber cuanto es mi potencial.',
+                },
+                {
+                    icon: 'fas fa-chart-line',
+                    title: 'De haber empezado con una StartUp desde cero hasta que sea autosostenible (Dibal.pe).',
+                    description: 'Por haber sido el primer programador. <br/> Por haber luchado para hacerlo crecer. <br/> Por haber luchado contra la pandemia y no haberme dado por vencido con todos los contras que se nos presentaban. <br/> Por mi liderazgo en cada nuevo miembro del equipo.',
+                },
+                {
+                    icon: 'fas fa-graduation-cap',
+                    title: 'Haberme graduado como Ingeniero en Informática.',
+                    description: 'El orgullo de haber superado una meta, de tantas, de mi vida.',
+                }
+            ],
         }
-    },
-    computed: {
-        // map `this.theme` to `this.$store.getters.theme`
-        ...mapState([
-            'prouds',
-            'error',
-            'fetchingData',
-        ]),
     },
     components: {
         Title,
-        Loading,
-        draggable: VueDraggableNext,
-    },
-    watch: {
-        prouds (newProuds) {
-            if(newProuds){
-                const prouds = [...Object.values(this.prouds)];
-
-                const proudsReduce = prouds.reduce((old,curr) => {
-                    return [...old, {
-                        id: curr.id,
-                        icon: curr.icon,
-                        title: curr.title,
-                        description: curr.description,
-                    }];
-                },[]);
-
-                this.proudsTemp = _.cloneDeep(proudsReduce);
-            }
-        },
     },
     methods:{
         ...mapActions([
@@ -193,11 +130,6 @@ export default {
             console.log('prouds',prouds);
             this.updateProud(prouds);
         },
-    },
-    created(){
-        this.fetchProuds()
-    },
-    mounted() {
     },
 }
 </script>

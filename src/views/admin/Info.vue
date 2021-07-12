@@ -45,19 +45,19 @@ export default {
                 },
                 {
                     icon: 'fas fa-globe',
-                    title: 'Website',
+                    title: 'Web',
                     description: 'bypabloc.site',
-                    url: 'http://bypabloc.site',
+                    url: 'https://bypabloc-cv.netlify.app/',
                 },
                 {
                     icon: 'fas fa-birthday-cake',
-                    title: 'Birth Date',
+                    title: 'Fecha de nacimiento',
                     description: '08/08/91',
                     url: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnIyY2RtdDliM3VvOTdqbDg1NXEzZmNlczRfMTk5MTA4MDggcGFjZzE5OTFAbQ&tmsrc=pacg1991%40gmail.com&scp=ALL',
                 },
                 {
                     icon: 'fas fa-map-marker-alt',
-                    title: 'Habitation',
+                    title: 'Ubicación',
                     description: 'Lima, Perú',
                     url: 'https://goo.gl/maps/BEifmkUpj5P6Wa3fA',
                 },

@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import store from './store'
 import router from './router'
-import firebase from "./api/firebase"
 import { mapState } from "vuex";
 
 import VueSweetalert2 from 'vue-sweetalert2';
@@ -17,22 +16,7 @@ import '../src/assets/scss/custom.scss';
 
 const app = createApp(App)
 
-document.title = "Template CV";
-
-const user = localStorage.getItem('user')
-if(user){
-    const userData = JSON.parse(user)
-    console.log('userData',userData)
-    store.dispatch('fetchUser',userData)
-
-    firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-            store.dispatch('fetchUser',userData)
-        }
-    });
-}else{
-    store.dispatch('fetchUser',null)
-}
+document.title = "CV ByPabloC";
 
 app.mixin({  
     methods: {

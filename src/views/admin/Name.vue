@@ -21,8 +21,8 @@ export default {
     data() {
         return {
             name: "Pablo Contreras",
-            slogan: "A challenge-loving web developer",
-            title: "Who am I?",
+            slogan: "Un desarrollador amante de los desafíos",
+            title: "¿Quien soy?",
         }
     },
     props: {
