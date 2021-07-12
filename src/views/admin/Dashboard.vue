@@ -1,20 +1,16 @@
 <template>
     <div>
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div :class="'row theme-bg-'+[theme]+'-600'">
                 <main class="col-12">
                     <div class="row p-3">
                         <div :class="'col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3 theme-bg-'+[theme]+'-800 p-2'">
                             <div class="col-12">
-
-                                <picture-profile class="pt-2" :url="'https://dibal-storage.s3.us-east-2.amazonaws.com/images/img_profile.png'"/>
-
+                                <picture-profile class="pt-2"/>
                                 <name/>
-
                                 <info/>
                                 <socials/>
                                 <hobbies/>
-
                             </div>
                         </div>
                         <div :class="'col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9 col-xxl-9 theme-'+[theme]+'-100 p-2'">
