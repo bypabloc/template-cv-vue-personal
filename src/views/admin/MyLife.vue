@@ -168,9 +168,9 @@ export default {
                     title: 'Código abierto de un mini twitter.',
                     description: `Mini Twitter
                         <br/>
-                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Demostración desplegada en netlify.app</a>
+                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Aplicación desplegada en Netlify</a>
                         <br/>
-                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend con documentación</a>
+                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend con documentación desplegado en Heroku</a>
                     `,
                     skills: [
                         'Primeros pasos en un framework de JavaScript (VueJS 3)',
