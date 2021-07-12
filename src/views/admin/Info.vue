@@ -46,7 +46,7 @@ export default {
                 {
                     icon: 'fas fa-globe',
                     title: 'Web',
-                    description: 'bypabloc.site',
+                    description: 'bypabloc-cv.netlify.app',
                     url: 'https://bypabloc-cv.netlify.app/',
                 },
                 {
