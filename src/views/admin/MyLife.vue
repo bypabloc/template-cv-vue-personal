@@ -336,7 +336,7 @@ export default {
                     date: '2006',
                     icon: 'fas fa-microchip',
                     title: 'Toqué un mouse',
-                    description: `YO: "¡Woooow!"... ¡Amor a primera vista!`,
+                    description: `Yo: "¡Woooow!"... ¡Amor a primera vista!`,
                 },
                 {
                     date: '08-08-1991',
