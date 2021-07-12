@@ -47,7 +47,7 @@ export default {
                     icon: 'fas fa-globe',
                     title: 'Web',
                     description: 'bypabloc.site',
-                    url: 'http://bypabloc.site',
+                    url: 'https://bypabloc-cv.netlify.app/',
                 },
                 {
                     icon: 'fas fa-birthday-cake',
