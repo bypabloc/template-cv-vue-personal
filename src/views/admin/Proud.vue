@@ -36,17 +36,22 @@ export default {
     name: 'Proud',
     data() {
         return {
-            title: "What am I proud of?",
+            title: "¿De que estoy orgulloso?",
             prouds: [
                 {
-                    icon: 'fas fa-graduation-cap',
-                    title: 'Having started with a StartUp from scratch until it is self-sustaining (Dibal.pe).',
-                    description: 'For having been the first programmer.<br/>For having fought to make it grow.<br/>For having fought against the pandemic and not giving up with all the cons that were presented to us.<br/>For my leadership in each new member of the team.',
+                    icon: 'fas fa-fire',
+                    title: 'De fundar una StartUp (AppInteli.com).',
+                    description: 'Es un nuevo reto el cual quiero saber cuanto es mi potencial.',
                 },
                 {
                     icon: 'fas fa-chart-line',
-                    title: 'Have graduated as an Informatics Engineer.',
-                    description: 'The pride of having exceeded one goal, of so many, of my life.',
+                    title: 'De haber empezado con una StartUp desde cero hasta que sea autosostenible (Dibal.pe).',
+                    description: 'Por haber sido el primer programador. <br/> Por haber luchado para hacerlo crecer. <br/> Por haber luchado contra la pandemia y no haberme dado por vencido con todos los contras que se nos presentaban. <br/> Por mi liderazgo en cada nuevo miembro del equipo.',
+                },
+                {
+                    icon: 'fas fa-graduation-cap',
+                    title: 'Haberme graduado como Ingeniero en Informática.',
+                    description: 'El orgullo de haber superado una meta, de tantas, de mi vida.',
                 }
             ],
         }

@@ -45,7 +45,7 @@ export default {
                 },
                 {
                     icon: 'fas fa-globe',
-                    title: 'Website',
+                    title: 'Web',
                     description: 'bypabloc.site',
                     url: 'http://bypabloc.site',
                 },
@@ -57,7 +57,7 @@ export default {
                 },
                 {
                     icon: 'fas fa-map-marker-alt',
-                    title: 'Habitation',
+                    title: 'Ubicación',
                     description: 'Lima, Perú',
                     url: 'https://goo.gl/maps/BEifmkUpj5P6Wa3fA',
                 },

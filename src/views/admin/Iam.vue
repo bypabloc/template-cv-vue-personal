@@ -26,7 +26,7 @@ export default {
             title: "¿Quien soy?",
             descriptions: [
                 {
-                    text: `Soy un desarrollador nacido en Venezuela y CTO de <a href="https://dibal.pe">Dibal.pe</a>. Estoy interesado y capacitado en diferentes temas de tecnología de la información, incluida la programación, el desarrollo web y la seguridad informática y de redes.`,
+                    text: `Soy un desarrollador nacido en Venezuela, CTO de <a href="https://dibal.pe">Dibal.pe</a> y founder de <a href="https://appinteli.com">AppInteli.com</a> . Estoy interesado y capacitado en diferentes temas de tecnología de la información, incluida la programación, el desarrollo web y la seguridad informática y de redes.`,
                 },
             ],
         }

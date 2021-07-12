@@ -32,7 +32,7 @@ export default {
     name: 'socials',
     data() {
         return {
-            title: "SOCIALS",
+            title: "REDES SOCIALES",
             socials: [
                 {
                     icon: 'fab fa-github',
