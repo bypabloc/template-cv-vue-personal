@@ -32,12 +32,12 @@ export default {
             title: "LANGUAGES",
             languages: [
                 {
-                    text: 'Spanish',
+                    text: 'Español',
                     percentage: 100,
                 },
                 {
-                    text: 'English',
-                    percentage: 60,
+                    text: 'Ingles',
+                    percentage: 40,
                 },
             ],
             

@@ -51,7 +51,7 @@ export default {
                 },
                 {
                     icon: 'fas fa-birthday-cake',
-                    title: 'Birth Date',
+                    title: 'Fecha de nacimiento',
                     description: '08/08/91',
                     url: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnIyY2RtdDliM3VvOTdqbDg1NXEzZmNlczRfMTk5MTA4MDggcGFjZzE5OTFAbQ&tmsrc=pacg1991%40gmail.com&scp=ALL',
                 },
