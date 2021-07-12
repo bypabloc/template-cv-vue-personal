@@ -53,7 +53,7 @@
                                                             Activo
                                                         </span>
                                                         <span v-else-if="value.status.type == 4">
-                                                            Fuente abierta
+                                                            Código abierto
                                                         </span>,
                                                     </span>
                                                     <span v-if="value?.status?.link">
@@ -147,7 +147,7 @@ export default {
                         link: 'Disponible en mí <a href="https://github.com/bypabloc/template-cv-vue-personal" target="_blank">GitHub</a>',
                     },
                     title: 'Código abierto de este currículum.',
-                    description: `¡Una plantilla de currículum basada en VueJS y con Bootstrap que estás viendo ahora mismo!.`,
+                    description: `Una plantilla de currículum basada en VueJS 3 y con Bootstrap 5 ¡La estas viendo ahora mismo!.`,
                     skills: [
                         'Compartir código',
                         'Conocimiento propio',
@@ -155,20 +155,26 @@ export default {
                 },
                 {
                     date: '2020',
-                    icon: 'fab fa-vuejs',
+                    icon: 'fas fa-heart',
                     status: {
-                        type: 3,
+                        type: 4,
                         team: 1,
+                        link: `
+                            Disponible en mí GitHub el
+                            <a href="https://github.com/bypabloc/twitter" target="_blank">Frontend</a> y el 
+                            <a href="https://github.com/bypabloc/twitter-api" target="_blank">Backend</a>
+                        `,
                     },
-                    title: 'Primeros pasos en un framework de JavaScript (Vuejs).',
+                    title: 'Código abierto de un mini twitter.',
                     description: `Mini Twitter
                         <br/>
-                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Frontend</a>
+                        <a href="https://bypabloc-twitter.netlify.app/" target="_blank">Demostración desplegada en netlify.app</a>
                         <br/>
-                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend</a>
+                        <a href="https://bypabloc-twitter-api.herokuapp.com/" target="_blank">Backend con documentación</a>
                     `,
                     skills: [
-                        'Conocimiento propio',
+                        'Primeros pasos en un framework de JavaScript (VueJS 3)',
+                        'Divirtiéndome aprendiendo',
                     ],
                 },
                 {
@@ -211,7 +217,12 @@ export default {
                     date: '2018',
                     icon: 'fas fa-plane-departure',
                     title: 'Migré de mi país',
-                    description: `Yo: No se a donde llegué, ¿esto es lo que el mundo llama independizarse?, me tuve que empezar a hacer comida yo solo, quiero a mi mamá.`,
+                    description: `
+                        Yo: ¿Dónde estoy?<br/>
+                        ¿Esto es lo que el mundo llama independizarse?<br/>
+                        ¿Tengo que cocinar yo solo?<br/>
+                        ¡Quiero a mi mamá!
+                    `,
                 },
                 {
                     date: '2017 - 2018',
@@ -269,7 +280,7 @@ export default {
                         },
                     },
                     title: 'Proyecto de control de obras - Instituto de Vialidad Y Obras Públicas Del Estado Yaracuy',
-                    description: `Aprendí como trabajé en equipo, este año conté con un equipo de trabajo increible y eso nos llevo a realizar un buen sistema informatico el cual requeria el instituto.
+                    description: `Aprendí como trabajar en equipo. Este año conté con un equipo de trabajo increible y eso nos llevo a realizar un buen sistema informatico el cual requeria el instituto.
                         <br/>
                         El sistema que desarrollamos se encargaba de tomar el registro de las obras publicas desde la realizacion del presupuesto, pasando por los recalculos, registro de planos, hasta su finalización.`,
                     skills: [
@@ -306,7 +317,7 @@ export default {
                         },
                     },
                     title: 'Proyecto de control de registro de equipos - Instituto CADAFE',
-                    description: 'Es un instituto público el cual analizamos que tenia la necesidad de un sistema informatico el cual le ayudara con el registro y movimiento de cada uno de sus equipos, este fue mi primer proyecto, muy basico.',
+                    description: 'Es un instituto público dónde analizamos su necesidad de un sistema informático para ayudarle con el registro y movimiento de cada uno de sus dispositivos. Este fue mi primer proyecto para un cliente. Su desarrollo fue muy básico.',
                     skills: [
                         'Levantamiento de información o requerimientos de software en un instituto',
                         'HTML',
