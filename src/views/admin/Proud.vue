@@ -48,7 +48,7 @@ export default {
                     icon: 'fas fa-graduation-cap',
                     title: 'Haberme graduado como Ingeniero en Informática.',
                     description: 'El orgullo de haber superado una meta, de tantas, de mi vida.',
-                }
+                },
             ],
         }
     },

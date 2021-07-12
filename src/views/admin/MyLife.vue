@@ -39,6 +39,7 @@
                                                             value.status.type==1 ? 'text-warning ' : ' ',
                                                             value.status.type==2 ? 'text-danger ' : ' ',
                                                             value.status.type==3 ? 'text-success ' : ' ',
+                                                            value.status.type==4 ? 'text-info ' : ' ',
                                                         ]
                                                         "
                                                     >
@@ -50,7 +51,13 @@
                                                         </span>
                                                         <span v-else-if="value.status.type == 3">
                                                             Activo
+                                                        </span>
+                                                        <span v-else-if="value.status.type == 4">
+                                                            Fuente abierta
                                                         </span>,
+                                                    </span>
+                                                    <span v-if="value?.status?.link">
+                                                        <span v-html="value.status.link"></span>,
                                                     </span>
                                                     Equipo: 
                                                     <span>
@@ -72,8 +79,8 @@
                                                             value.status.type==1 ? 'text-warning ' : ' ',
                                                             value.status.type==2 ? 'text-danger ' : ' ',
                                                             value.status.type==3 ? 'text-success ' : ' ',
-                                                        ]
-                                                        "
+                                                            value.status.type==4 ? 'text-info ' : ' ',
+                                                        ]"
                                                     >
                                                         <span v-if="value?.status?.reason?.title">
                                                             {{ value?.status?.reason?.title }}:
@@ -129,6 +136,21 @@ export default {
                     description: `Paralelamente a mi trabajo formal actual, estoy desarrollando, con un colega, un sistema web para la gestión de ventas y todo lo que eso conlleva. Todavía está en una etapa muy joven, pero este proyecto es un nuevo desafío para mí.`,
                     skills: [
                         'Emprendimiento propio',
+                    ],
+                },
+                {
+                    date: '2021',
+                    icon: 'fas fa-heart',
+                    status: {
+                        type: 4,
+                        team: 1,
+                        link: 'Disponible en mí <a href="https://github.com/bypabloc/template-cv-vue-personal" target="_blank">GitHub</a>',
+                    },
+                    title: 'Código abierto de este currículum.',
+                    description: `¡Una plantilla de currículum basada en VueJS y con Bootstrap que estás viendo ahora mismo!.`,
+                    skills: [
+                        'Compartir código',
+                        'Conocimiento propio',
                     ],
                 },
                 {
