@@ -16,7 +16,7 @@ import '../src/assets/scss/custom.scss';
 
 const app = createApp(App)
 
-document.title = "CV ByPabloC";
+document.title = "Pablo Contreras - CV";
 
 app.mixin({  
     methods: {
