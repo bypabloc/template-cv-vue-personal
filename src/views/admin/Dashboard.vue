@@ -22,6 +22,7 @@
                             <proud/>
                             <education/>
                             <skills/>
+                            <soft-skills/>
                             <languages/>
                         </div>
                         <div :class="'col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 theme-'+[theme]+'-100 p-2'">
@@ -40,6 +41,7 @@ import iam from './Iam'
 import proud from './Proud'
 import education from './Education'
 import skills from './Skills'
+import SoftSkills from './SoftSkills'
 import info from './Info'
 import socials from './Socials'
 import hobbies from './Hobbies'
@@ -52,6 +54,7 @@ export default {
     components: {
         // Colors,
         skills,
+        SoftSkills,
         education,
         proud,
         name,

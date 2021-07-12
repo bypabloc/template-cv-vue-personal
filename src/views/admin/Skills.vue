@@ -33,7 +33,7 @@ export default {
     name: 'Skills',
     data() {
         return {
-            title: "Skills and Expertize",
+            title: "Habilidades y experiencia",
             skills: [
                 {
                     icon: 'fab fa-js',

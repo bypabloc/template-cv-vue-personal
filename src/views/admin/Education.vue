@@ -7,8 +7,8 @@
 
             <div class="row" v-for="(value, index) in education" :key="index">
                 <div class="row">
-                    <span class="col-2">{{ moment(value.range.end, 'DD-MM-YYYY').format('DD/MM/YYYY') }}</span>
-                    <span class="col-2">{{ moment(value.range.start, 'DD-MM-YYYY').format('DD/MM/YYYY') }}</span>
+                    <span class="col-2">{{ value.range.end }}</span>
+                    <span class="col-2">{{ value.range.start }}</span>
                     <div class="col-8">
                         <p>
                             <strong>
@@ -37,23 +37,27 @@ export default {
     name: 'Education',
     data() {
         return {
-            title: "Education",
+            title: "Educación",
             education: [
                 {
                     range: {
-                        start: '06-07-2020',
-                        end: '30-07-2020',
+                        end: 'Actualidad',
+                        start: 'Desde el inicio',
                     },
-                    title: 'Informatics Engineer',
-                    description: 'IUTAB University. Learn the basics of technology.',
+                    title: 'Curso Udemy y YouTube',
+                    description: `
+                        Varios cursos en línea que me han ayudado a incrementar mis
+                        habilidades en el área. Ejemplo: modern JavaScript, Nodejs with
+                        Sock et.io, Vue, Flutter, Dart, Laravel, php. Among others.
+                    `,
                 },
                 {
                     range: {
-                        start: '12-07-2020',
-                        end: '17-07-2020',
+                        end: '06-2016',
+                        start: '02-2011',
                     },
-                    title: 'Curso Udemy - Laravel',
-                    description: 'Laravel para procitos xD.',
+                    title: 'Ingeniería de software',
+                    description: 'Universidad UPTYAB. Aprendí todo lo necesario para emprender en el mundo de la informática.',
                 },
             ],
             modelConfig: {
