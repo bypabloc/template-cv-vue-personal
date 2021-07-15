@@ -144,6 +144,31 @@ export default {
                     status: {
                         type: 4,
                         team: 1,
+                        link: `
+                            Disponible en mí GitHub el
+                            <a href="https://github.com/bypabloc/map-events" target="_blank">Frontend</a> y el 
+                            <a href="https://github.com/bypabloc/map-events-api" target="_blank">Backend</a>
+                        `,
+                    },
+                    title: 'Código abierto de un mini mapa de eventos.',
+                    description: `Map Events
+                        <br/>
+                        <a href="https://bypabloc-map-events.netlify.app/" target="_blank">Aplicación desplegada en Netlify</a>
+                        <br/>
+                        <a href="https://bypabloc-map-events-api.herokuapp.com/" target="_blank">Backend con documentación desplegado en Heroku</a>
+                    `,
+                    skills: [
+                        'Realtime (websockets) con Socket.io',
+                        'Practica en VueJS 3',
+                        'Aprendizaje',
+                    ],
+                },
+                {
+                    date: '2021',
+                    icon: 'fas fa-heart',
+                    status: {
+                        type: 4,
+                        team: 1,
                         link: 'Disponible en mí <a href="https://github.com/bypabloc/template-cv-vue-personal" target="_blank">GitHub</a>',
                     },
                     title: 'Código abierto de este currículum.',
