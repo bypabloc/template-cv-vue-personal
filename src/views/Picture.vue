@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="mx-auto">
-            <img class="img-thumbnail" src='../../assets/img_profile.png'/>
+            <img class="img-thumbnail" src='../assets/img_profile.png'/>
         </div>
         <!-- https://dibal-storage.s3.us-east-2.amazonaws.com/images/img_profile.png -->
     </div>
@@ -13,7 +13,7 @@ export default {
     name: 'Picture',
     data() {
         return {
-            image: '../../assets/img_profile.png',
+            image: '../assets/img_profile.png',
         }
     },  
 }

@@ -1,15 +1,18 @@
 <template>
     <div :class="'d-flex justify-content-center theme-bg-'+[theme]+'-600'">
         <main class="p-3 col-9 ancho">
-            <router-view></router-view>
+            <dashboard/>
         </main>
     </div>
 </template>
 
 <script>
 
+import Dashboard from './views/Dashboard.vue'
+
 export default {
     components: {
+        Dashboard,
     },
 };
 </script>
