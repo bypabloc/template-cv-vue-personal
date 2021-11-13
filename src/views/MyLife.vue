@@ -125,6 +125,21 @@ export default {
             title: "Mi vida en pocas palabras",
             list: [
                 {
+                    date: 'Mayo 2021 - Noviembre 2021',
+                    icon: 'fas fa-bolt',
+                    status: {
+                        type: 3,
+                        team: 2,
+                    },
+                    position: 'Software engineer',
+                    title: 'Sistema informático para: Rescatar comida y combatir el desperdicio de alimentos - <a href="https://www.goodmeal.app/" target="_blank">GoodMeal.app</a>.',
+                    description: `Desarrollo del onboarding de la web para los nuevos sellers, aplicacion de test en el backend, mejora de parte del código que existía, migración de interfaz antigua con "AdminLte" y "jQuery" a plantillas custom, Vue 3 con composition API, vuex y enrutamiento a SPA con vue router.`,
+                    skills: [
+                        'Mejores practicas',
+                        'Aplicación de mis mejores skills',
+                    ],
+                },
+                {
                     date: '2021 - Actualidad',
                     icon: 'fas fa-bolt',
                     status: {
