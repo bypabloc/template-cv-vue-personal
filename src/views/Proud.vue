@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     icon: 'fas fa-chart-line',
-                    title: 'De haber empezado con una StartUp desde cero hasta que sea autosostenible (Dibal.pe).',
+                    title: 'De haber iniciado desde cero, como el primer programador, hasta que la empresa alcanzo 80 clientes (Dibal.pe, empresa B2B).',
                     description: 'Por haber sido el primer programador. <br/> Por haber luchado para hacerlo crecer. <br/> Por haber luchado contra la pandemia y no haberme dado por vencido con todos los contras que se nos presentaban. <br/> Por mi liderazgo en cada nuevo miembro del equipo.',
                 },
                 {

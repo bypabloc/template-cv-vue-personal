@@ -55,6 +55,17 @@ export default {
                 },
                 {
                     range: {
+                        end: 'Actualidad',
+                        start: 'Desde el inicio de mi aprendizaje',
+                    },
+                    title: 'Libros',
+                    description: `
+                        Clean JavaScript: Aprende a aplicar Código Limpio, SOLID y Testing.
+
+                    `,
+                },
+                {
+                    range: {
                         end: '06-2016',
                         start: '02-2011',
                     },
