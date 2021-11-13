@@ -36,23 +36,23 @@ export default {
                 {
                     icon: 'fas fa-file-pdf',
                     text: 'CV PDF Español',
-                    href: 'https://1drv.ms/b/s!AoZaJmtucTrag4V5HKWkC52d9TGtmw?e=ySKgJI',
+                    href: 'https://1drv.ms/b/s!AoZaJmtucTrag-gZYpBWTBOWXBBavQ?e=bzCPsl',
                 },
-                {
-                    icon: 'fas fa-file-pdf',
-                    text: 'CV PDF English',
-                    href: 'https://1drv.ms/b/s!AoZaJmtucTrag4V3v0GaW1whkk0ilA?e=ZVA2JB',
-                },
+                // {
+                //     icon: 'fas fa-file-pdf',
+                //     text: 'CV PDF English',
+                //     href: 'https://1drv.ms/b/s!AoZaJmtucTrag4V3v0GaW1whkk0ilA?e=ZVA2JB',
+                // },
                 {
                     icon: 'fas fa-file-word',
                     text: 'CV Word Español',
-                    href: 'https://1drv.ms/w/s!AoZaJmtucTrag4V6cDqu2Zp5wL6FUg?e=fnqOKS',
+                    href: 'https://1drv.ms/w/s!AoZaJmtucTrag4V6cDqu2Zp5wL6FUg?e=LtdXMh',
                 },
-                {
-                    icon: 'fas fa-file-word',
-                    text: 'CV Word English',
-                    href: 'https://1drv.ms/w/s!AoZaJmtucTrag4V49HB4yMCef09nwA?e=o6LxZC',
-                },
+                // {
+                //     icon: 'fas fa-file-word',
+                //     text: 'CV Word English',
+                //     href: 'https://1drv.ms/w/s!AoZaJmtucTrag4V49HB4yMCef09nwA?e=o6LxZC',
+                // },
             ],
             
         }

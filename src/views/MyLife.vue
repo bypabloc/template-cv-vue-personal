@@ -129,11 +129,20 @@ export default {
                     icon: 'fas fa-bolt',
                     status: {
                         type: 3,
-                        team: 2,
+                        team: 4,
                     },
                     position: 'Software engineer',
                     title: 'Sistema informático para: Rescatar comida y combatir el desperdicio de alimentos - <a href="https://www.goodmeal.app/" target="_blank">GoodMeal.app</a>.',
-                    description: `Desarrollo del onboarding de la web para los nuevos sellers, aplicacion de test en el backend, mejora de parte del código que existía, migración de interfaz antigua con "AdminLte" y "jQuery" a plantillas custom, Vue 3 con composition API, vuex y enrutamiento a SPA con vue router.`,
+                    description: `Es una Startup que se encarga de combatir el desperdicio de alimentos a
+                        través de la tecnología, donde empresas de alimentos crean una bolsa de
+                        comida destinada para una venta económica de los productos que están
+                        a punto de vencerse.
+                        Mi trabajo allí fue desarrollar el onboarding de la web para los nuevos
+                        sellers, aplicación de testing en el backend, mejora de parte del código
+                        que existía, migración de interfaz antigua con "AdminLte" y "jQuery" a
+                        plantillas echas en Figma, Vue 3 con composition API, vuex y enrutamiento
+                        a SPA con vue router.
+                        `,
                     skills: [
                         'Mejores practicas',
                         'Aplicación de mis mejores skills',
