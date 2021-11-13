@@ -239,7 +239,7 @@ export default {
                     ],
                 },
                 {
-                    date: '2018 - Actualidad',
+                    date: '2018 - 2021',
                     icon: 'fas fa-briefcase',
                     status: {
                         type: 3,
